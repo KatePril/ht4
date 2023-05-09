@@ -17,4 +17,7 @@ class Woman(Human):
             return ""
     
     def show_info(self):
-        return f"Name: {self.dict_data['first_name']} {self.dict_data['last_name']}\n" + super().show_info()
+        try:
+            return f"Name: {self.dict_data['first_name']} {self.dict_data['last_name']}\n" + super().show_info()
+        except KeyError:
+                return f"Name: unknown\n" + super().show_info()

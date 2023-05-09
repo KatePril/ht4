@@ -6,6 +6,7 @@ human = Human()
 print(human.show_info())
 
 man = Man()
+
 print(man.show_info())
 
 woman = Woman()
